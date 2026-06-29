@@ -1,0 +1,255 @@
+/* 
+        Background    
+            background-color: antiquewhite; -> color name
+            background-color: rgb(x x x / A);   -> red green blue Alpha channel
+            background-color: #RRGGBB;   -> Color Hex Code
+
+            background-image: url();
+            |
+            |--> repeat
+            |--> no-repeat
+            |--> repeat-x
+            |--> repeat-y
+
+            background-attachment: 
+            |
+            |--> scroll
+            |--> fixed
+
+            background-position:
+            |
+            |--> left top
+            |--> left center
+            |--> left bottom
+            |--> center top
+            |--> center center
+            |--> center bottom
+            |--> right top
+            |--> right center
+            |--> right bottom
+            |
+            |--> leftpx toppx
+
+            background-size:
+            |
+            |--> cover
+            |--> contain
+
+            ----------------------
+        padding
+
+            padding: top right bottom left;
+
+            ----------------------
+        margin
+            
+            margin: top right bottom left;
+
+            ----------------------
+        border
+
+            border:
+            |
+            |--> border-style
+            |--> border-color
+            |--> border-width
+
+            ----------------------
+        display
+            |
+            |--> none
+        
+        visibility
+            |
+            |--> hidden
+        
+            ----------------------
+        nasting
+
+            father child
+
+            ----------------------
+        dimensions
+
+            width, min-width, max-width --> fit-content
+            height, min-height, max-height
+
+            ----------------------
+        overflow
+            |
+            |--> visible
+            |--> hidden
+            |--> scroll
+            |--> auto
+            ----------------------
+        text-align
+            |
+            |--> center
+            |--> right
+            |--> left
+
+        vertical-align
+            |
+            |--> top
+            |--> bottom
+            |--> middle
+            ----------------------
+        text-Decoration
+        
+        text-Transform
+            ----------------------
+        letter-spacing
+        
+        text-indent
+
+        line-height
+
+        word-spacing
+
+        word-break
+        
+        white-space
+
+            ----------------------
+        CSS Units
+
+            - px
+            - em --> time ( from his father )
+            - rem --> root time ( html is the root = 16px )
+            - vm --> value time ( from his father )
+            - vw --> view port ( from the width of page )
+            
+            -----------------------
+        Mouse Cursor
+            
+            - pointer
+
+            ------------------------
+
+        Float And Clear
+
+            Float make objects float in the page
+            clear do an empty area that do a wall between top object and bottom object
+            ------------------------
+        The CSS Calculation
+
+            ------------------------
+        Opacity
+
+            ------------------------
+        Position
+
+            static بياخد اي حاجة ف طريقة
+
+            relative    بيتحرك لوحده بس حتى لو فيه حاجة  فطريقه هيتحرك فوقها
+
+            absolute    بيخلي الابن يتحرك جواه و الاب relative 
+
+            fixed بيتحرك ف اي حته ملهوش دعوة مين الاب و مين الام  , و بيفضل ف مكان الشاشة مهما عملت سكرول
+
+            sticky بيفضل معاك ف الشاشة زي الفيكسد بس لما توصله
+
+            ------------------------
+        Z-Index
+
+            sorting the layers by numbers
+
+            ------------------------
+        Lists Styling
+
+            list-style
+
+            ------------------------
+        Table Styling
+            
+            ------------------------
+
+            x:hover
+            x:checked + x لما اعمل تشيك خلي العنصر اكس كذا
+            
+            ------------------------
+        pipeline
+            .side-articles {
+
+                position: relative;
+            }
+
+            .side-articles .pipeline {
+                position: absolute;
+                background-color: #7e8768;
+                width: 5px;
+                height: 50%;
+                left: 17px;
+
+            }
+
+        after
+
+            content
+
+            -------------------------
+        counter
+
+            -------------------------
+        Box Shadow 
+
+            H-Shadow | V-Shadow | Blur | Color | Inset
+
+*/
+
+
+.login {
+    width: 30%;
+    background-color: rgb(243, 233, 233);
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    border-radius: 10px;
+}
+
+.login-title {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+form {
+    padding: 10px;
+}
+
+input {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    outline: none;
+    margin-left: calc(15% - 10px);
+    font-size: large;
+    display: block;
+    
+}
+
+.password {
+    margin-top: 20px;
+}
+
+input:focus {
+    border-color: rgb(48, 53, 215);
+
+}
+
+form a {
+    text-decoration: none;
+    color: black;
+    margin-left: calc(15% - 10px);
+    
+}
+
+.submit {
+    margin-top: 20px;
+    margin-left: calc(15%);    
+    margin-bottom: 10px;
+}
+
